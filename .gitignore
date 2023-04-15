@@ -1,0 +1,3 @@
+.ENV
+package.json
+/node_modules
