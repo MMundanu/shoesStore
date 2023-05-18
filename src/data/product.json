@@ -6,7 +6,7 @@
         "description": "Segunda versión de un clasico de los deportes Outdoor. Ideal para desarrollar todo tipo de actividades al aire libre y en la ciudad",
         "price": "18650",
         "discount": "",
-        "categoriesId": "5",
+        "categoriesId": 5,
         "productTalleId": ""
     },
     {
@@ -16,7 +16,7 @@
         "description": "El modelo LISS es un concepto femenino muy liviano y respirable con materiales y líneas únicas. Mesh tejido en 3 dimensiones para cambinar respirabilidad y resistencia. SUELA : De EVA, con insertos en goma.",
         "price": "17340",
         "discount": "",
-        "categoriesId": "5",
+        "categoriesId": 5,
         "productTalleId": ""
     },
     {
@@ -26,7 +26,7 @@
         "description": "La versión IV de la familia wind combina look tradicional con líneas de diseño; permite lucirte y tener un mayor confort a la hora de correr.",
         "price": "14700",
         "discount": "",
-        "categoriesId": "5",
+        "categoriesId": 5,
         "productTalleId": ""
     },
     {
@@ -36,7 +36,7 @@
         "description": "Un clasico de Topper, capellada en cuero natural. Perforaciones y refuerzos que hacen de este Tenis un calzado ideal para el uso diario y deportivo.",
         "price": "18099",
         "discount": "",
-        "categoriesId": "5",
+        "categoriesId": 5,
         "productTalleId": ""
     },
     {
@@ -46,7 +46,7 @@
         "description": "Ideales para tu look urbano, cool y atemporal. Un clásico de Topper para todos los nostálgicos. Capellada de microfibra de alta calidad. Suela de goma moldeada con propiedades antideslizantes.",
         "price": "15149",
         "discount": "",
-        "categoriesId": "5",
+        "categoriesId": 5,
         "productTalleId": ""
     },
     {
@@ -56,7 +56,7 @@
         "description": "Zapattilas para hombre",
         "price": "18999",
         "discount": "",
-        "categoriesId": "5",
+        "categoriesId": 5,
         "productTalleId": ""
     },
     {
@@ -66,7 +66,7 @@
         "description": "Las zapatillas Puma Comet 2 Alt Beta ADP están confeccionadas con materiales livianos para un mejor uso. La espuma Softride en el talón te brinda la amortiguación necesaria para tus pisadas. La plantilla SoftFOAM+ incorpora más comodidad. El sistema de cordones proporciona un ajuste personalizado",
         "price": "16559",
         "discount": "",
-        "categoriesId": "3",
+        "categoriesId": 3,
         "productTalleId": ""
     },
     {
@@ -76,7 +76,7 @@
         "description": "La tienda no incluyó una descripción del producto",
         "price": "32314",
         "discount": "",
-        "categoriesId": "3",
+        "categoriesId": 3,
         "productTalleId": ""
     },
     {
@@ -86,7 +86,7 @@
         "description": "Ve duro o vete a casa en el Twitch Runner de alto rendimiento, cuenta con líneas limpias y detalles de diseño elegante, una línea de pintura audaz resalta la herramienta acolchada, mientras que el material superior de malla única es transpirable y cómodo durante las carreras de velocidad y resistencia.",
         "price": "24699",
         "discount": "",
-        "categoriesId": "3",
+        "categoriesId": 3,
         "productTalleId": ""
     },
     {
@@ -96,7 +96,7 @@
         "description": "BOTITAS PUMA REBOUND.",
         "price": "22999",
         "discount": "",
-        "categoriesId": "3",
+        "categoriesId": 3,
         "productTalleId": ""
     },
     {
@@ -106,7 +106,7 @@
         "description": "Zapatillas Puma R78 Sl en Blanco.",
         "price": "28999",
         "discount": "",
-        "categoriesId": "3",
+        "categoriesId": 3,
         "productTalleId": ""
     },
     {
@@ -116,7 +116,7 @@
         "description": "La tienda no incluyó una descripción del producto.",
         "price": "37999",
         "discount": "",
-        "categoriesId": "2",
+        "categoriesId": 2,
         "productTalleId": ""
     },
     {
@@ -126,7 +126,7 @@
         "description": "Estas versátiles zapatillas de running para hombre son ideales para la máquina de correr o los senderos. Incorporan un exterior de dos capas en malla para una máxima ventilación y un revestimiento estampado para soporte adicional. Cloudfoam supersuave amortigua cada aterrizaje, mientras que la suela muy durable ofrece una máxima resistencia al desgaste.",
         "price": "21399",
         "discount": "",
-        "categoriesId": "2",
+        "categoriesId": 2,
         "productTalleId": ""
     },
     {
@@ -136,7 +136,7 @@
         "description": "Este producto está hecho parcialmente con contenido reciclado generado a partir de desechos de producción, tales como recortes de tela y desechos domésticos posconsumo, para evitar un mayor impacto ambiental al producir contenido virgen.",
         "price": "32999",
         "discount": "",
-        "categoriesId": "2",
+        "categoriesId": 2,
         "productTalleId": ""
     },
     {
@@ -146,7 +146,7 @@
         "description": "Este producto, hecho con una serie de materiales reciclados y al menos 50 % de contenido reciclado, representa solo una de nuestras soluciones para acabar con los residuos plásticos.",
         "price": "21999",
         "discount": "",
-        "categoriesId": "2",
+        "categoriesId": 2,
         "productTalleId": ""
     },
     {
@@ -156,7 +156,7 @@
         "description": "Estas zapatillas te acompañan a enfrentar lo que te traiga el día. Incluyen la suela de caucho resistente y toda la tecnología reactiva adidas running que conocés y amás. La mediasuela Cloudfoam Super genera momentum y brinda soporte al pie al mismo tiempo. No importa si lo tuyo es el running o no, estas zapatillas son todo lo que necesitás.",
         "price": "34999",
         "discount": "",
-        "categoriesId": "2",
+        "categoriesId": 2,
         "productTalleId": ""
     },
     {
@@ -166,7 +166,7 @@
         "description": "PRODUCTOS 100% ORIGINALES.",
         "price": "32999",
         "discount": "",
-        "categoriesId": "2",
+        "categoriesId": 2,
         "productTalleId": ""
     },
     {
@@ -176,7 +176,7 @@
         "description": "ZAPATILLAS NIKE DOWNSHIFTER 12.",
         "price": "49499",
         "discount": "",
-        "categoriesId": "1",
+        "categoriesId": 1,
         "productTalleId": ""
     },
     {
@@ -186,7 +186,7 @@
         "description": "ZAPATILLAS NIKE AIR PRESTO PRM.",
         "price": "61998",
         "discount": "",
-        "categoriesId": "1",
+        "categoriesId": 1,
         "productTalleId": ""
     },
     {
@@ -196,7 +196,7 @@
         "description": "Para que corras con comodidad, usa las zapatillas Nike Downshifter 12 que funcionan de forma cómoda ya que crean rendimiento y amortiguación para llegar lejos. ¡Serán tus favoritas!",
         "price": "36299",
         "discount": "",
-        "categoriesId": "1",
+        "categoriesId": 1,
         "productTalleId": ""
     },
     {
@@ -206,7 +206,7 @@
         "description": "Nike Run Swift 2.",
         "price": "32999",
         "discount": "",
-        "categoriesId": "1",
+        "categoriesId": 1,
         "productTalleId": ""
     },
     {
@@ -216,7 +216,7 @@
         "description": "Las Nike Pegasus 39 te ayudarán a alcanzar nuevas alturas. Son más ligeras en la parte superior que las Pegasus 38 e ideales para cualquier temporada, ofrecen sujeción y contención, y la amortiguación de la planta del pie combinada con unidades Zoom Air dobles (1 más que en las Peg 38) aportan un toque adicional a cada pisada. Vuelve un modelo todoterreno con alas. Es hora de volar.",
         "price": "59999",
         "discount": "",
-        "categoriesId": "1",
+        "categoriesId": 1,
         "productTalleId": ""
     },
     {
@@ -226,7 +226,7 @@
         "description": "Zapatilla Air Force I High SE.",
         "price": "52500",
         "discount": "",
-        "categoriesId": "1",
+        "categoriesId": 1,
         "productTalleId": ""
     },
     {
@@ -236,7 +236,7 @@
         "description": "El modelo Trend posee un sistema de ajuste Slip-On y su capellada esta confeccionada con un tejido con tecnologia Engineered-Mesh, tambien elastico en el lateral del pie y un contrafuerte reforzado de doble espuma. Entresuela monobloc con Energized Rubber de anatomia diferenciada. Plantilla de confort Super-Foam",
         "price": "16890",
         "discount": "",
-        "categoriesId": "4",
+        "categoriesId": 4,
         "productTalleId": ""
     },
     {
@@ -246,7 +246,7 @@
         "description": "Son ideales para los días calurosos ya que permiten que el pie respire mejor. Versátiles, adaptables a cualquier situación y outfit, y además son fáciles de lavar.",
         "price": "21089",
         "discount": "",
-        "categoriesId": "4",
+        "categoriesId": 4,
         "productTalleId": ""
     },
     {
@@ -256,7 +256,7 @@
         "description": "Las zapatillas Fila Heating fueron desarrolladas para satisfacer las necesidades del corredor principiante en busca de zapatos suaves y cómodos. Tiene una entresuela ENERGIZED PLUS con líneas inspiradas en el modelo FLOAT FLY. También cuenta con puntas de caucho en el talón y la puntera para garantizar una mayor seguridad de tracción en superficies secas y mojadas. Su parte superior está construida con tejido MESH transpirable, además de tener dos correas que brindan mayor ajuste al atar. La lengüeta tiene una cinta personalizada.",
         "price": "19150",
         "discount": "",
-        "categoriesId": "4",
+        "categoriesId": 4,
         "productTalleId": ""
     },
     {
@@ -266,7 +266,7 @@
         "description": "ZAPATILLAS FILA ACD MID.",
         "price": "37989",
         "discount": "",
-        "categoriesId": "4",
+        "categoriesId": 4,
         "productTalleId": ""
     },
     {
@@ -276,7 +276,7 @@
         "description": "Con un look deportivo y auténtico, la Fila Racer es ideal para el corredor que busca una zapatilla ligera y cómoda para usar en el día a día.",
         "price": "21834",
         "discount": "",
-        "categoriesId": "4",
+        "categoriesId": 4,
         "productTalleId": ""
     },
     {
@@ -286,7 +286,7 @@
         "description": "El modelo Trend posee un sistema de ajuste Slip-On y su capellada esta confeccionada con un tejido con tecnologia Engineered-Mesh, tambien elastico en el lateral del pie y un contrafuerte reforzado de doble espuma. Entresuela monobloc con Energized Rubber de anatomia diferenciada. Plantilla de confort Super-Foam.",
         "price": "16890",
         "discount": "",
-        "categoriesId": "4",
+        "categoriesId": 4,
         "productTalleId": ""
     }
 

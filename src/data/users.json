@@ -4,13 +4,17 @@
         "surname": "Mundanu",
         "email": "mundanu@gmail.com",
         "password": "123",
-        "rolId": 1
+        "rolId": 1,
+        "genderId": 1,
+        "avatar": "user.png"
     },
     {
         "name": "user",
         "surname": "user",
         "email": "user@gmail.com",
         "password": "123",
-        "rolId": 2
+        "rolId": 2,
+        "genderId": 3,
+        "avatar": "user.png"
     }
 ]

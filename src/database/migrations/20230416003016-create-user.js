@@ -26,11 +26,23 @@ module.exports = {
         type: Sequelize.STRING
       },
       genderId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: {
+            tableName: 'Genders'
+          },
+          key: 'id'
+        }
       },
       rolId: {
         allowNull: false,
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: {
+            tableName: 'Rols'
+          },
+          key: 'id'
+        }
       },
       avatar: {
         type: Sequelize.STRING
@@ -43,6 +55,9 @@ module.exports = {
         type: Sequelize.DATE
       },
       updatedAt: {
+        type: Sequelize.DATE
+      },
+      delatedAt: {
         type: Sequelize.DATE
       }
     });

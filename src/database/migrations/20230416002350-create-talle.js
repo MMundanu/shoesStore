@@ -19,6 +19,9 @@ module.exports = {
       },
       updatedAt: {
         type: Sequelize.DATE
+      },
+      delatedAt: {
+        type: Sequelize.DATE
       }
     });
   },

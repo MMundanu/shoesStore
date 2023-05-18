@@ -13,6 +13,22 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   }
+  User.associate = (models) =>{
+    User.belongsTo(models.Rol,{
+      as: "rol",
+      foreignKey: "rolId"
+
+    });
+    User.hasOne(models.Gender,{
+      as: "genders",
+      foreignKey: "genderId"
+
+    });
+    User.hasMany(models.Order,{
+      foreignKey : 'userId',
+      as : 'orders'
+    })
+  }
   User.init({
     name: DataTypes.STRING,
     surname: DataTypes.STRING,
