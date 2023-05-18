@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head', { title : 'detalle' }) %> 
+
+</head>
+
+<body class="detalle">
+    <header class="carrito__header">
+        <%- include('./partials/header') %> 
+    </header>
+
+    <main class="detalle__main">
+        
+        <section class="detalle__main__section">            
+            <h3>Jaque Mate > <%= product.category.name %>  </h3>
+            
+            <article class="detalle__main__section__article">
+                <div class="detalle__main__section__article__imagenes">
+                    <div class="detalle__main__section__article__imagenes__prinsipal">
+                        <img src="/images/<%= product.images[0].file %>" alt="">
+                    </div>
+                   <div class="detalle__main__section__article__imagenes__secundaria">
+                    <img src="/images/<%= product.images[0].file %>" alt="">
+                    <img src="/images/<%= product.images[0].file %>" alt="">
+                   </div> 
+                </div>
+            </article> 
+        </section>       
+            <section class="detalle__main__section__descripcion">
+                
+                <div class="detalle__main__section__article__imagenes__titulo" style="padding: 20px;">
+                   
+                    <% if (product.discount > 0) { %>
+                        <div>
+                            <h1 style="padding-bottom: 10px;"><%= product.name %></h2>
+                            <h5 style=" text-decoration: line-through;" >$<%= product.price %></h5>
+                            <h6 >%<%= product.discount %></h6>
+                            <h4 >$<%= Math.round(product.price - (product.price * product.discount / 100)) %></h4>
+                        </div>
+                     
+                    <% } else { %>
+                     
+                    <div class="descrip">
+                        <h1 ><%= product.name %></h1>
+                        <h4 >$<%= product.price %></h4>
+                    </div>
+                    <% } %>
+                    
+                    <div class="detalle__main__section__article__descripcion">
+                        <h6>Descripcion</h6>
+                        <p><%= product.description %> </p>
+                             
+                    <div style="display: flex; align-items: center; gap: 5px; margin-top: 30px;" class="detalle__main__section__article__pagos">
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-cc-amex"></i>
+                        <img style="margin-top: 5px;" src="/images/icons8-mercado-pago.svg" alt="">
+                    </div>  
+                    </div>
+                    
+                </div>
+                <div class="detalle__main__section__article__button">
+                    <% if (locals.userLogin) { %>
+                    <button style="cursor: pointer;" onclick="addCartItem('<%=product.id%>')">Agregar Al Carrito</button>
+                    <% } %>
+                    <% if (locals.userLogin && userLogin.categoria === "Admin" || locals.userLogin && userLogin.categoria === "SuperAdmin") { %>
+                    <a href="/products/editarProducto/<%= product.id %>" class="a-button">Editar Producto</a>
+                    <form action="/products/remove/<%= product.id %>?_method=DELETE" method="POST">
+                        <button type="submit">ELIMINAR</button>
+                    </form>
+                    <% } %>
+                    
+                </div> 
+            </section>
+               
+        
+            
+            <section class="home__main__masBuscados">
+                
+                <h4>Otros productos</h4>
+
+                
+                <% productosRelacionados.forEach(product => { %>
+                    <article> 
+                        <a href="/products/detalle/<%= product.id %>" class="productoRelacionado">
+                        <div class="img_product">
+                            <img src="/images/<%= product.images[0].file %>" alt="">
+                        </div>
+                        <% if (product.discount > 0) { %>
+                            <div class="descrip-discount">
+                                <p class="product_name"><%= product.name %></p>
+                                <p class="product_price-anterior">$<%= product.price %></p>
+                                <p class="product_discount">%<%= product.discount %></p>
+                                <p class="product_price">$<%= Math.round(product.price - (product.price * product.discount / 100)) %></p>
+                            </div>
+                         
+                        <% } else { %>
+                         
+                        <div class="descrip">
+                            <p class="product_name"><%= product.name %></p>
+                            <p class="product_price"><%= product.price %></p>
+                        </div>
+                        <% } %>
+                    </a>
+                </article>
+                <% }) %>
+                
+            </section>
+        
+
+        
+    </main>
+
+
+    <footer class="home__footer">
+        <%- include('./partials/footer') %> 
+    </footer>
+    <script src="/javascripts/cart.js"></script>
+</body>
+
+</html>
+

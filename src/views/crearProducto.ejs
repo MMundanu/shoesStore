@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head', { title : 'crear' }) %> 
+</head>
+
+<body class="crear">
+  <header class="carrito__header">
+        <%- include('./partials/header') %> 
+  </header>
+
+    <main>
+        <h1 class="titulo-form">Crea tu publicación</h1>
+        <section class="form">
+
+
+
+          <form action="/products/store" method="post" enctype="multipart/form-data">
+            <div>
+              <label for="name" class="form-label">Nombre del producto</label>
+              <input type="text" class="form-control" id="name" name="name" value="<%= locals.old && old.name?old.name:null %> ">
+              <small><%= locals.errors && errors.name?errors.name.msg:null %></small>
+              <small id="errorName"></small>
+            </div>
+            <div>
+              <label for="description" class="form-label">Descripcion</label>
+              <input type="text" class="form-control" id="description" name="description" value="<%= locals.old && old.description?old.description:null %> ">
+              <small><%= locals.errors && errors.description?errors.description.msg:null %></small>
+              <small id="errorDescription"></small>
+
+            </div>
+            <div class="conteiner-relative">
+              <label for="imagen" class="form-label">Imagen</label>
+              <div class="relative">
+                <label for="imageProduct" class="label-imagen form-label">Ingresar imagen</label>
+                <input type="file" name="imageProduct" value="" id="imageProduct" class="form-imagen" multiple>
+                <small><%= locals.errors && errors.imageProduct?errors.imageProduct.msg:null %></small>
+                <small id="errorImage"></small>
+              </div>
+            </div>
+            <div>
+              <label for="category" class="form-label">Categoria</label>
+    
+              <select name="category" class="categoria" >
+    
+                <option value="" hidden selected>Elegí la categoría</option>
+
+                <% categories.forEach(category => { %>
+                  <option value="<%=category.id%>"><%=category.name%></option>
+                <% }) %>
+                
+              </select>
+              <small id="errorCategory"></small>
+            </div>
+    
+            <div>
+              <label for="price" class="form-label">Precio</label>
+              <input type="text" class="form-control" id="price" name="price" value="<%= locals.old && old.price?old.price:null %>">
+              <small><%= locals.errors && errors.price?errors.price.msg:null %></small>
+              <small id="errorPrice"></small>
+            </div>
+            <div>
+              <label for="discount" class="form-label">Descuento</label>
+              <input type="text" class="form-control" id="discount" name="discount" min="5" max="90">
+              <small id="errorDiscount"></small>
+            </div>
+            <div>
+              <button type="submit" class="a-button">Crear</button>
+            </div>
+          </form>
+
+
+
+        </section>
+      </main>
+    <footer class="home__footer"> <%- include('./partials/footer') %>  </footer>
+    <script src="/javascripts/products.js"></script>
+</body>
+</html>
