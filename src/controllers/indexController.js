@@ -1,5 +1,6 @@
 const db = require('../database/models');
 const { Sequelize } = require("../database/models");
+const { Op } = require('sequelize')
 
 
 module.exports = {
@@ -7,13 +8,12 @@ module.exports = {
         
         
         let allProducts = db.Product.findAll({
-            includes:[{
-                association: 'category',
-                atributtes: ['id', 'name']
+            include:[{
+                association:"category"
             },
-        {
+            {
             association: 'images'
-        }]
+            }]
         });
 
         let categories = db.Category.findAll()
@@ -21,7 +21,7 @@ module.exports = {
         let productsRandom = db.Product.findAll({
             limit: 4,
             order: Sequelize.literal('rand()'),
-            includes:[{
+            include:[{
                 association: 'category',
                 atributtes: ['id', 'name']
             },
@@ -34,12 +34,17 @@ module.exports = {
 
         Promise.all([allProducts,categories,productsRandom])
         .then(([allProducts, categories,productsRandom]) => {
-            return res.render('index', 
-            {   allProducts,
+            return res.render('index',
+               {allProducts,
                 categories,
                 productsRandom
-            } )
+            }
+            )
         })
         .catch(error => console.log(error))
+    },
+    serch: (req, res) => {
+
+        let keyworrd
     }
 }
